@@ -17,11 +17,11 @@ public class Employee {
 	public Long id;
 	public String name;
 	public String email;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "department_id")
 	public Department department;
-	
+
 	public Employee() {
 	}
 
